@@ -1,10 +1,27 @@
-<app-hamburger-menu (click)="sidenav.toggle()" [active]="sidenav.opened"></app-hamburger-menu>
+<app-hamburger-menu
+  (click)="sidenav.toggle()"
+  [active]="sidenav.opened"
+></app-hamburger-menu>
+
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #sidenav [mode]="'over'" class="sidenav bg-primary">
   </mat-sidenav>
-
-  <mat-sidenav-content class="sidenav-content">
-    <mat-toolbar class="toolbar bg-primary"> </mat-toolbar>
-    <img src="assets/img/De_Badeendjes.png" alt="">
+  <mat-sidenav-content class="sidenav-content"
+    ><mat-toolbar class="toolbar bg-primary">
+      <span class="title txt-warn">{{ title }}</span>
+    </mat-toolbar>
+    <div class="content">
+      <section class="bg-accent">
+        <img src="assets/img/De_Badeendjes.png" alt="" />
+      </section>
+      <app-wave-divider color="#eff8f7" bgColor="#31a4a7"></app-wave-divider>
+      <section class="bg-primary">
+        <img src="assets/img/De_Badeendjes.png" alt="" />
+      </section>
+      <app-wave-divider color="#31a4a7" bgColor="#eff8f7"></app-wave-divider>
+      <section class="bg-accent">
+        <img src="assets/img/De_Badeendjes.png" alt="" />
+      </section>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
