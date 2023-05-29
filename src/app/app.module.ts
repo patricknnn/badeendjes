@@ -7,15 +7,25 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { HamburgerMenuComponent } from './components/hamburger-menu/hamburger-menu.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { WaveDividerComponent } from './components/wave-divider/wave-divider.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [AppComponent, HamburgerMenuComponent, WaveDividerComponent],
+  declarations: [
+    AppComponent,
+    HamburgerMenuComponent,
+    WaveDividerComponent,
+    ContactComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
     MatToolbarModule,
+    MatListModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -28,6 +28,10 @@
     & .content {
       display: flex;
       flex-direction: column;
+
+      & section {
+        padding: 0 2rem;
+      }
     }
   }
 }

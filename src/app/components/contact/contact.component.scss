@@ -1,0 +1,25 @@
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+
+  & .google-map-wrapper {
+    display: flex;
+    flex-grow: 1;
+
+    & .map {
+      display: flex;
+      flex-grow: 1;
+    }
+  }
+
+  & .info-wrapper {
+    display: flex;
+    flex-grow: 0.4;
+
+    & .info-list {
+        margin: 0 2rem;
+        width: 100%;
+    }
+  }
+}
