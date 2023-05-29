@@ -1,0 +1,145 @@
+// Custom Theme for Angular Material
+@use "@angular/material" as mat;
+
+@include mat.core();
+
+$palette-primary: (
+  50: #e6f4f4,
+  100: #c1e4e5,
+  200: #98d2d3,
+  300: #6fbfc1,
+  400: #50b2b4,
+  500: #31a4a7,
+  600: #2c9c9f,
+  700: #259296,
+  800: #1f898c,
+  900: #13787c,
+  A100: #b1fcff,
+  A200: #7efaff,
+  A400: #4bf8ff,
+  A700: #31f7ff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$palette-accent: (
+  50: #fdfefe,
+  100: #fafdfd,
+  200: #f7fcfb,
+  300: #f4faf9,
+  400: #f1f9f8,
+  500: #eff8f7,
+  600: #edf7f6,
+  700: #ebf6f5,
+  800: #e8f5f3,
+  900: #e4f3f1,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$palette-warn: (
+  50: #fdeee4,
+  100: #f9d6bc,
+  200: #f5ba8f,
+  300: #f19e62,
+  400: #ee8a40,
+  500: #eb751e,
+  600: #e96d1a,
+  700: #e56216,
+  800: #e25812,
+  900: #dd450a,
+  A100: #ffffff,
+  A200: #ffded4,
+  A400: #ffb7a1,
+  A700: #ffa387,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+// Define palettes
+$primary: mat.define-palette($palette-primary);
+$accent: mat.define-palette($palette-accent);
+$warn: mat.define-palette($palette-warn);
+
+// Define typopgraphy
+$typography: mat.define-typography-config(
+  $font-family: "Roboto",
+);
+
+// Define light theme
+$light-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $primary,
+      accent: $accent,
+      warn: $warn,
+    ),
+    typography: $typography,
+  )
+);
+
+// Define darktheme
+$dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $primary,
+      accent: $accent,
+      warn: $warn,
+    ),
+    typography: $typography,
+  )
+);
+
+// Include theme styles
+@include mat.all-component-themes($light-theme);
+
+// Use dark theme if 'material-dark' class is used
+.material-dark {
+  @include mat.all-component-colors($dark-theme);
+}

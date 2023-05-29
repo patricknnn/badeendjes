@@ -1,0 +1,15 @@
+.sidenav-container {
+  height: 100%;
+  width: 100%;
+
+  & .sidenav {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  & .sidenav-content {
+    & .toolbar {
+      height: 80px;
+    }
+  }
+}
