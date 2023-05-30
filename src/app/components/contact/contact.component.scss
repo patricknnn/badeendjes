@@ -10,6 +10,8 @@
     & .map {
       display: flex;
       flex-grow: 1;
+      border-radius: 8px;
+      overflow: hidden;
     }
   }
 
@@ -18,8 +20,8 @@
     flex-grow: 0.4;
 
     & .info-list {
-        margin: 0 2rem;
-        width: 100%;
+      margin: 0 2rem;
+      width: 100%;
     }
   }
 }

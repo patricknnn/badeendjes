@@ -8,4 +8,6 @@ import { Component, Input } from '@angular/core';
 export class TitleComponent {
   @Input() title: string = '';
   @Input() icon: string = 'spa';
+  @Input() titleColor: string = 'warn';
+  @Input() iconColor: string = 'primary';
 }

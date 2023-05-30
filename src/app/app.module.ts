@@ -11,6 +11,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { TitleComponent } from './components/title/title.component';
+import { AboutComponent } from './components/about/about.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { TitleComponent } from './components/title/title.component';
     WaveDividerComponent,
     ContactComponent,
     TitleComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +31,7 @@ import { TitleComponent } from './components/title/title.component';
     MatToolbarModule,
     MatListModule,
     MatIconModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
