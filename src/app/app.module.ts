@@ -10,6 +10,7 @@ import { WaveDividerComponent } from './components/wave-divider/wave-divider.com
 import { ContactComponent } from './components/contact/contact.component';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { TitleComponent } from './components/title/title.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
     HamburgerMenuComponent,
     WaveDividerComponent,
     ContactComponent,
+    TitleComponent,
   ],
   imports: [
     BrowserModule,

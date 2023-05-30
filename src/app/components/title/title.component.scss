@@ -1,0 +1,36 @@
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: 3rem;
+
+  & .title {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    font-family: "Amatic SC", cursive;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  & .underline-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+
+    & mat-divider {
+      width: 50px;
+      border-top-width: 2px;
+    }
+
+    & mat-icon {
+      margin: 0 16px;
+      opacity: 0.8;
+    }
+  }
+}

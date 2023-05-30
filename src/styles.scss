@@ -38,3 +38,13 @@ body {
 .txt-warn {
   color: $color-warn;
 }
+
+.border-primary {
+  border-color: rgba($color-primary, 0.5);
+}
+.border-accent {
+  border-color: rgba($color-accent, 0.5);
+}
+.border-warn {
+  border-color: rgba($color-warn, 0.5);
+}
