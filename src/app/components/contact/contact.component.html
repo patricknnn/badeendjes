@@ -1,34 +1,38 @@
-<div class="contact-wrapper">
-  <div class="google-map-wrapper">
-    <div class="map mat-elevation-z8">
-      <iframe
-        style="height: 100%; width: 100%; border: 0"
-        frameborder="0"
-        src="https://www.google.com/maps/embed/v1/place?q=Het+Voorste+Streekje+9,+Muntendam,+Netherlands&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-      ></iframe>
+<div class="container contact-wrapper">
+  <div class="max-width">
+    <div class="google-map-wrapper">
+      <div class="map mat-elevation-z8">
+        <iframe
+          style="height: 100%; width: 100%; border: 0"
+          frameborder="0"
+          src="https://www.google.com/maps/embed/v1/place?q=Het+Voorste+Streekje+9,+Muntendam,+Netherlands&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+        ></iframe>
+      </div>
     </div>
-  </div>
-  <div class="info-wrapper">
-    <mat-selection-list
-      class="info-list"
-      [multiple]="false"
-      [hideSingleSelectionIndicator]="true"
-    >
-      <mat-list-option>
-        <mat-icon matListItemIcon class="txt-warn">call</mat-icon>
-        <div matListItemTitle class="txt-primary">06 12345678</div>
-        <div matListItemLine>Tijdens kantooruren</div>
-      </mat-list-option>
-      <mat-list-option>
-        <mat-icon matListItemIcon class="txt-warn">mail</mat-icon>
-        <div matListItemTitle class="txt-primary">coby@de-wallen.nl</div>
-        <div matListItemLine>24/7 paraat</div>
-      </mat-list-option>
-      <mat-list-option>
-        <mat-icon matListItemIcon class="txt-warn">location_on</mat-icon>
-        <div matListItemTitle class="txt-primary">Het Voorste Schaamstreekje</div>
-        <div matListItemLine>Munt'ndam</div>
-      </mat-list-option>
-    </mat-selection-list>
+    <div class="info-wrapper">
+      <mat-selection-list
+        class="info-list"
+        [multiple]="false"
+        [hideSingleSelectionIndicator]="true"
+      >
+        <mat-list-option>
+          <mat-icon matListItemIcon class="txt-warn">call</mat-icon>
+          <div matListItemTitle class="txt-primary">06 12345678</div>
+          <div matListItemLine>Tijdens kantooruren</div>
+        </mat-list-option>
+        <mat-list-option>
+          <mat-icon matListItemIcon class="txt-warn">mail</mat-icon>
+          <div matListItemTitle class="txt-primary">coby@de-wallen.nl</div>
+          <div matListItemLine>24/7 paraat</div>
+        </mat-list-option>
+        <mat-list-option>
+          <mat-icon matListItemIcon class="txt-warn">location_on</mat-icon>
+          <div matListItemTitle class="txt-primary">
+            Het Voorste Schaamstreekje
+          </div>
+          <div matListItemLine>Munt'ndam</div>
+        </mat-list-option>
+      </mat-selection-list>
+    </div>
   </div>
 </div>

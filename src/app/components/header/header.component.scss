@@ -1,0 +1,38 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+
+  & .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: calc(64px + 1rem);
+    margin-left: calc(64px + 1rem);
+
+    & .logo {
+      max-width: 500px;
+
+      & h1 {
+        font-family: "Amatic SC", cursive;
+        font-size: 72px;
+        font-weight: 700;
+      }
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  & .wave {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: 0 -2rem;
+  }
+}

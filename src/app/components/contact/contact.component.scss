@@ -3,25 +3,33 @@
   flex-direction: row;
   margin-bottom: 3rem;
 
-  & .google-map-wrapper {
+  & .max-width {
+    width: 100%;
+    max-width: 1010px;
     display: flex;
-    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
 
-    & .map {
+    & .google-map-wrapper {
       display: flex;
       flex-grow: 1;
-      border-radius: 8px;
-      overflow: hidden;
+
+      & .map {
+        display: flex;
+        flex-grow: 1;
+        border-radius: 8px;
+        overflow: hidden;
+      }
     }
-  }
 
-  & .info-wrapper {
-    display: flex;
-    flex-grow: 0.4;
+    & .info-wrapper {
+      display: flex;
+      flex-grow: 0.4;
 
-    & .info-list {
-      margin: 0 2rem;
-      width: 100%;
+      & .info-list {
+        width: 100%;
+      }
     }
   }
 }

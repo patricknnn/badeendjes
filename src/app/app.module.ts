@@ -13,6 +13,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { TitleComponent } from './components/title/title.component';
 import { AboutComponent } from './components/about/about.component';
 import { MatCardModule } from '@angular/material/card';
+import { HeaderComponent } from './components/header/header.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { MatCardModule } from '@angular/material/card';
     ContactComponent,
     TitleComponent,
     AboutComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,7 @@ import { MatCardModule } from '@angular/material/card';
     MatListModule,
     MatIconModule,
     MatCardModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
