@@ -1,17 +1,14 @@
 .header-wrapper {
+  background: url(/assets/img/kids.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   height: 100vh;
   position: relative;
-
-  & .bg-img {
-    position: absolute;
-    bottom: 0;
-    right: -2rem;
-    z-index: 0;
-    opacity: 0.1;
-    min-width: 100%;
-  }
+  margin: 0 -2rem;
 
   & .content {
     display: flex;
@@ -19,8 +16,8 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    z-index: 2;
     gap: 5rem;
+    z-index: 2;
 
     & .logo {
       max-width: 500px;
@@ -44,6 +41,5 @@
     left: 0;
     right: 0;
     margin: 0 -2rem;
-    z-index: 1;
   }
 }

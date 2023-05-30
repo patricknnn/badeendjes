@@ -1,0 +1,13 @@
+.call-btn-wrapper {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  right: 8px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

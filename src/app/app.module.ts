@@ -15,6 +15,7 @@ import { AboutComponent } from './components/about/about.component';
 import { MatCardModule } from '@angular/material/card';
 import { HeaderComponent } from './components/header/header.component';
 import { MatButtonModule } from '@angular/material/button';
+import { CallComponent } from './components/call/call.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { MatButtonModule } from '@angular/material/button';
     TitleComponent,
     AboutComponent,
     HeaderComponent,
+    CallComponent,
   ],
   imports: [
     BrowserModule,
