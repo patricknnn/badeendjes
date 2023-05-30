@@ -4,12 +4,23 @@
   height: 100vh;
   position: relative;
 
+  & .bg-img {
+    position: absolute;
+    bottom: 0;
+    right: -2rem;
+    z-index: 0;
+    opacity: 0.1;
+    min-width: 100%;
+  }
+
   & .content {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: calc(64px + 1rem);
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    z-index: 2;
+    gap: 5rem;
 
     & .logo {
       max-width: 500px;
@@ -33,5 +44,6 @@
     left: 0;
     right: 0;
     margin: 0 -2rem;
+    z-index: 1;
   }
 }
