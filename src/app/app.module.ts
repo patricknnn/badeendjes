@@ -17,6 +17,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { MatButtonModule } from '@angular/material/button';
 import { CallComponent } from './components/call/call.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { TeamComponent } from './components/team/team.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     HeaderComponent,
     CallComponent,
     WelcomeComponent,
+    TeamComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

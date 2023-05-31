@@ -8,7 +8,7 @@
   <mat-sidenav #sidenav [mode]="'over'" class="sidenav bg-primary">
   </mat-sidenav>
   <mat-sidenav-content class="sidenav-content">
-    <div class="content">
+    <div class="content bg-accent">
       <!-- header -->
       <section id="header" class="bg-primary">
         <app-header></app-header>
@@ -17,6 +17,8 @@
       <section id="welcome" class="bg-accent">
         <app-title title="Welkom" icon="spa"></app-title>
         <app-welcome></app-welcome>
+        <app-title title="Wie wij zijn" icon="spa"></app-title>
+        <app-team></app-team>
       </section>
       <app-wave-divider color="#eff8f7" bgColor="#31a4a7"></app-wave-divider>
       <!-- about -->
@@ -34,6 +36,10 @@
       <section id="contact" class="bg-accent">
         <app-title title="Neem contact met ons op" icon="spa"></app-title>
         <app-contact></app-contact>
+      </section>
+      <!-- footer -->
+      <section id="footer" class="bg-warn">
+        <app-footer></app-footer>
       </section>
     </div>
   </mat-sidenav-content>

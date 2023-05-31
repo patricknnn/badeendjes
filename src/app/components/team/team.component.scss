@@ -1,15 +1,14 @@
-.welcome-wrapper {
+.team-wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 
   & .max-width {
     width: 100%;
     max-width: 1010px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     gap: 2rem;
