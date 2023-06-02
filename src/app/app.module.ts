@@ -22,6 +22,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { TranslateTextPipe } from './pipes/translate-text.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { InViewDirective } from './directives/in-view.directive';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     SidenavComponent,
     TranslateTextPipe,
+    InViewDirective,
   ],
   imports: [
     BrowserModule,

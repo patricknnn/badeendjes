@@ -1,9 +1,13 @@
-<div class="about-wrapper">
-  <span class="message txt-accent">
+<div *appInView class="about-wrapper">
+  <span
+    class="message txt-accent animate__animated animate__fadeInUp animate__delay-20ms"
+  >
     {{ "about.message" | translateText | async }}
   </span>
   <div class="cards-wrapper">
-    <div class="card-content mat-elevation-z8 bg-accent">
+    <div
+      class="card-content mat-elevation-z8 bg-accent animate__animated animate__zoomIn animate__delay-20ms"
+    >
       <mat-icon class="txt-primary">home</mat-icon>
       <span class="txt-warn">
         {{ "about.cardOne.title" | translateText | async }}
@@ -12,7 +16,9 @@
         {{ "about.cardOne.description" | translateText | async }}
       </p>
     </div>
-    <div class="card-content mat-elevation-z8 bg-accent">
+    <div
+      class="card-content mat-elevation-z8 bg-accent animate__animated animate__zoomIn animate__delay-20ms"
+    >
       <mat-icon class="txt-primary">shield_with_heart</mat-icon>
       <span class="txt-warn">
         {{ "about.cardTwo.title" | translateText | async }}
@@ -21,7 +27,9 @@
         {{ "about.cardTwo.description" | translateText | async }}
       </p>
     </div>
-    <div class="card-content mat-elevation-z8 bg-accent">
+    <div
+      class="card-content mat-elevation-z8 bg-accent animate__animated animate__zoomIn animate__delay-20ms"
+    >
       <mat-icon class="txt-primary">moving</mat-icon>
       <span class="txt-warn">
         {{ "about.cardThree.title" | translateText | async }}

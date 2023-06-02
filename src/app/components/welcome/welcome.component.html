@@ -1,11 +1,11 @@
-<div class="welcome-wrapper">
+<div *appInView class="welcome-wrapper">
   <div class="max-width">
-    <div class="visit-card">
+    <div class="visit-card animate__animated animate__fadeInLeft animate__delay-20ms">
       <div class="image-wrapper">
         <img src="assets/img/huis.jpeg" alt="bezoek" />
       </div>
     </div>
-    <div class="welcome-message">
+    <div class="welcome-message animate__animated animate__fadeInRight animate__delay-20ms">
       <span class="title txt-primary">
         {{ "welcome.subTitle" | translateText | async }}
       </span>
