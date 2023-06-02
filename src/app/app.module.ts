@@ -23,6 +23,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { TranslateTextPipe } from './pipes/translate-text.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { InViewDirective } from './directives/in-view.directive';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { InViewDirective } from './directives/in-view.directive';
     MatIconModule,
     MatCardModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -37,10 +37,10 @@ export class ContactComponent {
     );
   }
 
-  public getEmbeddedMapsUrl(): SafeUrl {
+  public getEmbeddedMapsUrl(address: string): SafeUrl {
     const apiKey: string = '&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8';
     const baseUrl: string = 'https://www.google.com/maps/embed/v1/place?q=';
-    const addressURL = this.address?.replace(' ', '+');
+    const addressURL = address.replace(' ', '+');
 
     return this._sinatizer.bypassSecurityTrustResourceUrl(
       `${baseUrl}${addressURL}${apiKey}`

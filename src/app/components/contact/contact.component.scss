@@ -20,6 +20,23 @@
         flex-grow: 1;
         border-radius: 8px;
         overflow: hidden;
+        position: relative;
+
+        & .spinner-wrapper {
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+          z-index: 1;
+        }
+
+        & iframe {
+          z-index: 2;
+        }
       }
     }
 
