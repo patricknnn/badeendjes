@@ -19,6 +19,7 @@ import { CallComponent } from './components/call/call.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { TeamComponent } from './components/team/team.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { FooterComponent } from './components/footer/footer.component';
     WelcomeComponent,
     TeamComponent,
     FooterComponent,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,

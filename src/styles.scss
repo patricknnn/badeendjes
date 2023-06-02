@@ -57,3 +57,41 @@ body {
 .border-warn {
   border-color: rgba($color-warn, 0.5) !important;
 }
+
+// animate
+.animate__delay-10ms {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.animate__delay-20ms {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.animate__delay-30ms {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.animate__delay-40ms {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.5s;
+}
+.animate__delay-50ms {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.animate__delay-60ms {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.animate__delay-70ms {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.animate__delay-80ms {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.animate__delay-90ms {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}

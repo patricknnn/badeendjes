@@ -1,0 +1,28 @@
+<div class="sidenav-wrapper">
+  <div class="logo-wrapper">
+    <img
+      src="assets/img/badeendjes_logo.png"
+      class="animate__animated animate__fadeInUp animate__fast"
+      alt="logo"
+    />
+  </div>
+  <div class="navlist-wrapper">
+    <div
+      *ngFor="let navlink of navlinks; let i = index"
+      class="navlist-item animate__animated animate__delay-{{
+        i
+      }}0ms animate__fast"
+      [class.animate__bounceInLeft]="open"
+    >
+      <a
+        [href]="navlink.href"
+        (click)="activeNavlink = navlink; linkClicked.emit(true)"
+        class="txt-accent"
+        [class.border-warn]="navlink === activeNavlink"
+        [class.border-primary]="navlink !== activeNavlink"
+      >
+        {{ navlink.title }}
+      </a>
+    </div>
+  </div>
+</div>

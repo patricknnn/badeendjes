@@ -6,6 +6,10 @@
 
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #sidenav [mode]="'over'" class="sidenav bg-primary">
+    <app-sidenav
+      [open]="sidenav.opened"
+      (linkClicked)="sidenav.close()"
+    ></app-sidenav>
   </mat-sidenav>
   <mat-sidenav-content id="scroll-content" class="sidenav-content">
     <div class="content bg-accent">
