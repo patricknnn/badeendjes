@@ -1,7 +1,7 @@
 <div
   class="call-btn-wrapper bg-primary mat-elevation-z8 animate__animated animate__fadeInDown"
 >
-  <button mat-icon-button>
+  <a mat-icon-button *ngIf="phoneNumber" [href]="'tel:' + phoneNumber">
     <mat-icon class="txt-accent">call</mat-icon>
-  </button>
+  </a>
 </div>
