@@ -20,6 +20,8 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { TeamComponent } from './components/team/team.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { TranslateTextPipe } from './pipes/translate-text.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     TeamComponent,
     FooterComponent,
     SidenavComponent,
+    TranslateTextPipe,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     MatIconModule,
     MatCardModule,
     MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

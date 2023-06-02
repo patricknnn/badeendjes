@@ -1,5 +1,7 @@
 <div class="title-wrapper">
-  <span class="title txt-{{ titleColor }}">{{ title }}</span>
+  <span class="title txt-{{ titleColor }}">
+    {{ title | translateText | async }}
+  </span>
   <div class="underline-wrapper">
     <mat-divider class="border-{{ iconColor }}"></mat-divider>
     <mat-icon class="txt-{{ iconColor }}">{{ icon }}</mat-icon>

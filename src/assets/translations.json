@@ -1,0 +1,51 @@
+{
+  "about": {
+    "title": "Over onze opvang",
+    "message": "Kleinschalige en flexibele kinderopvang op maat. Onze opvang voor kinderen (0 - 12 jaar) vindt plaats in een huiselijke sfeer. Zo ziet je kind altijd hetzelfde vertrouwde gezicht!",
+    "cardOne": {
+      "title": "Huiselijk",
+      "description": "Opvang vindt plaats in een huiselijke sfeer"
+    },
+    "cardTwo": {
+      "title": "Vertrouwd",
+      "description": "Het vertouwde gezicht van de gastouder"
+    },
+    "cardThree": {
+      "title": "Flexibel",
+      "description": "Onze opvang is flexibel zonder zorgen"
+    }
+  },
+  "welcome": {
+    "title": "Welkom",
+    "subTitle": "De Badeendjes",
+    "description": "Kinderopvang De Badeendjes staat voor kwaliteit. Professioneel, gestructureerd, schoon en veilig. Wij bieden uw kind een vertrouwde en beschermde omgeving aan.",
+    "button": "Plan een bezichtiging"
+  },
+  "team": {
+    "title": "Wie zijn wij",
+    "subTitle": "Coby hoertje",
+    "description": "Kinderopvang De Badeendjes staat voor kwaliteit. Professioneel, gestructureerd, schoon en veilig. Wij bieden uw kind een vertrouwde en beschermde omgeving aan.",
+    "button": "Kom kennis maken"
+  },
+  "contact": {
+    "title": "Neem contact met ons op",
+    "phone": {
+      "number": "06 12345678",
+      "description": "Tijdens kantooruren"
+    },
+    "email": {
+      "address": "coby@skv.nl",
+      "description": "Roel kan mogelijk antwoorden"
+    },
+    "location": {
+      "address": "Het voorste streekje 9",
+      "description": "Muntendam"
+    }
+  },
+  "footer": {
+    "text": "Kinderopvang De Badeendjes"
+  },
+  "home": {
+    "title": "Home"
+  }
+}

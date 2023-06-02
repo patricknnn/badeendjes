@@ -6,14 +6,14 @@
       </div>
     </div>
     <div class="welcome-message">
-      <span class="title txt-primary">De Badeendjes</span>
+      <span class="title txt-primary">
+        {{ "welcome.subTitle" | translateText | async }}
+      </span>
       <p class="txt-primary">
-        Kinderopvang De Badeendjes staat voor kwaliteit. Professioneel,
-        gestructureerd, schoon en veilig. Wij bieden uw kind een vertrouwde en
-        beschermde omgeving aan.
+        {{ "welcome.description" | translateText | async }}
       </p>
       <button mat-raised-button color="warn" class="txt-accent">
-        Plan een bezichtiging
+        {{ "welcome.button" | translateText | async }}
       </button>
     </div>
   </div>

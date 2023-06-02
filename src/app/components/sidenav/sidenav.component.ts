@@ -3,7 +3,6 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export interface navLink {
   title: string;
   href: string;
-  icon: string;
 }
 
 @Component({
@@ -16,10 +15,10 @@ export class SidenavComponent {
   @Output() linkClicked: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   public navlinks: navLink[] = [
-    { title: 'Home', href: '#header', icon: 'house' },
-    { title: 'Welkom', href: '#welcome', icon: 'house' },
-    { title: 'Over ons', href: '#about', icon: 'house' },
-    { title: 'Contact', href: '#contact', icon: 'house' },
+    { title: 'home.title', href: '#header' },
+    { title: 'welcome.title', href: '#welcome' },
+    { title: 'about.title', href: '#about' },
+    { title: 'contact.title', href: '#contact' },
   ];
   public activeNavlink: navLink = this.navlinks[0];
 }

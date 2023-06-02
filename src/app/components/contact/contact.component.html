@@ -17,18 +17,30 @@
       >
         <mat-list-option>
           <mat-icon matListItemIcon class="txt-warn">call</mat-icon>
-          <div matListItemTitle class="txt-primary">06 12345678</div>
-          <div matListItemLine>Tijdens kantooruren</div>
+          <div matListItemTitle class="txt-primary">
+            {{ "contact.phone.number" | translateText | async }}
+          </div>
+          <div matListItemLine>
+            {{ "contact.phone.description" | translateText | async }}
+          </div>
         </mat-list-option>
         <mat-list-option>
           <mat-icon matListItemIcon class="txt-warn">mail</mat-icon>
-          <div matListItemTitle class="txt-primary">coby@de-wallen.nl</div>
-          <div matListItemLine>24/7 paraat</div>
+          <div matListItemTitle class="txt-primary">
+            {{ "contact.email.address" | translateText | async }}
+          </div>
+          <div matListItemLine>
+            {{ "contact.email.description" | translateText | async }}
+          </div>
         </mat-list-option>
         <mat-list-option>
           <mat-icon matListItemIcon class="txt-warn">location_on</mat-icon>
-          <div matListItemTitle class="txt-primary">Het Voorste Streekje</div>
-          <div matListItemLine>Munt'ndam</div>
+          <div matListItemTitle class="txt-primary">
+            {{ "contact.location.address" | translateText | async }}
+          </div>
+          <div matListItemLine>
+            {{ "contact.location.description" | translateText | async }}
+          </div>
         </mat-list-option>
       </mat-selection-list>
     </div>
