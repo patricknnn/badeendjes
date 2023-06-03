@@ -17,6 +17,7 @@ export class SidenavComponent {
   public navlinks: navLink[] = [
     { title: 'home.title', href: '#header' },
     { title: 'welcome.title', href: '#welcome' },
+    { title: 'team.title', href: '#team' },
     { title: 'about.title', href: '#about' },
     { title: 'contact.title', href: '#contact' },
   ];

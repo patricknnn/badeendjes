@@ -43,7 +43,8 @@ export class InViewDirective implements AfterViewInit {
     // prevent issue being visible all together
     const style = window.getComputedStyle(el);
     const [width, height] = [parseInt(style.width), parseInt(style.height)];
-    !width && (el.style.minWidth = '40px');
-    !height && (el.style.minHeight = '40px');
+    
+    el.style.minWidth = width;
+    el.style.minHeight = height;
   }
 }
