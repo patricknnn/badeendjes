@@ -1,6 +1,7 @@
 import {
   AfterViewInit,
   Directive,
+  OnInit,
   TemplateRef,
   ViewContainerRef,
 } from '@angular/core';
@@ -8,7 +9,7 @@ import {
 @Directive({
   selector: '[appInView]',
 })
-export class InViewDirective implements AfterViewInit {
+export class InViewDirective implements OnInit, AfterViewInit {
   private alreadyRendered: boolean = false;
 
   public constructor(
@@ -16,9 +17,12 @@ export class InViewDirective implements AfterViewInit {
     private tplRef: TemplateRef<any>
   ) {}
 
+  public ngOnInit(): void {
+    this.renderInitialContent();
+  }
+
   public ngAfterViewInit(): void {
     const elToObserve = this.vcRef.element.nativeElement.parentElement;
-    this.setMinWidthHeight(elToObserve);
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -33,18 +37,19 @@ export class InViewDirective implements AfterViewInit {
 
   public renderContents(isInView: boolean): void {
     if (isInView && !this.alreadyRendered) {
+      this.tplRef.elementRef.nativeElement.parentElement.style.opacity = 1;
+
       this.vcRef.clear();
       this.vcRef.createEmbeddedView(this.tplRef);
       this.alreadyRendered = true;
     }
   }
 
-  private setMinWidthHeight(el: any): void {
-    // prevent issue being visible all together
-    const style = window.getComputedStyle(el);
-    const [width, height] = [parseInt(style.width), parseInt(style.height)];
-    
-    el.style.minWidth = width;
-    el.style.minHeight = height;
+  private renderInitialContent(): void {
+    // render initial content with opacity 0 in order to prevent href issues
+    this.tplRef.elementRef.nativeElement.parentElement.style.opacity = 0;
+
+    this.vcRef.clear();
+    this.vcRef.createEmbeddedView(this.tplRef);
   }
 }
