@@ -16,10 +16,9 @@
     >
       <a
         [href]="navlink.href"
-        (click)="activeNavlink = navlink; linkClicked.emit(true)"
         class="txt-accent"
-        [class.border-warn]="navlink === activeNavlink"
-        [class.border-primary]="navlink !== activeNavlink"
+        [class.border-warn]="isNavlinkActive(navlink.href)"
+        [class.border-primary]="!isNavlinkActive(navlink.href)"
       >
         {{ navlink.title | translateText | async }}
       </a>
