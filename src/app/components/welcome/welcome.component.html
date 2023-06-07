@@ -1,11 +1,15 @@
 <div *appInView class="welcome-wrapper">
   <div class="max-width">
-    <div class="visit-card animate__animated animate__fadeInLeft animate__delay-30ms">
+    <div
+      class="visit-card animate__animated animate__fadeInLeft animate__delay-30ms"
+    >
       <div class="image-wrapper">
-        <img src="assets/img/huis.jpeg" alt="bezoek" />
+        <img src="assets/img/huis.jpeg" alt="bezoek" class="mat-elevation-z8" />
       </div>
     </div>
-    <div class="welcome-message animate__animated animate__fadeInRight animate__delay-30ms">
+    <div
+      class="welcome-message animate__animated animate__fadeInRight animate__delay-30ms"
+    >
       <span class="title txt-primary">
         {{ "welcome.subTitle" | translateText | async }}
       </span>
