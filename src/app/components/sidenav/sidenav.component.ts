@@ -1,5 +1,6 @@
 import {
   AfterViewInit,
+  ChangeDetectorRef,
   Component,
   EventEmitter,
   Input,
@@ -22,6 +23,8 @@ export class SidenavComponent implements AfterViewInit {
 
   public scrollElement: HTMLElement | null = null;
 
+  public constructor(private readonly _changeDetector: ChangeDetectorRef) {}
+
   public navlinks: navLink[] = [
     { title: 'home.title', href: '#header' },
     { title: 'welcome.title', href: '#welcome' },
@@ -32,6 +35,8 @@ export class SidenavComponent implements AfterViewInit {
 
   public ngAfterViewInit(): void {
     this.scrollElement = document.getElementById('scroll-content');
+
+    this._changeDetector.detectChanges();
   }
 
   public isNavlinkActive(id: string): boolean {

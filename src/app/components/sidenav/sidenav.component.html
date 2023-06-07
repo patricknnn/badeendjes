@@ -16,6 +16,7 @@
     >
       <a
         [href]="navlink.href"
+        (click)="linkClicked.emit(true)"
         class="txt-accent"
         [class.border-warn]="isNavlinkActive(navlink.href)"
         [class.border-primary]="!isNavlinkActive(navlink.href)"

@@ -5,7 +5,7 @@
 <app-call></app-call>
 
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #sidenav [mode]="'side'" class="sidenav bg-primary">
+  <mat-sidenav #sidenav [mode]="'over'" class="sidenav bg-primary">
     <app-sidenav
       [open]="sidenav.opened"
       (linkClicked)="sidenav.close()"
@@ -21,13 +21,13 @@
       <section id="welcome" class="bg-accent">
         <app-title title="welcome.title" icon="spa"></app-title>
         <app-welcome></app-welcome>
+        <!-- <app-wave-divider color="#eff8f7" bgColor="#eff8f7"></app-wave-divider> -->
       </section>
-      <app-wave-divider color="#eff8f7" bgColor="#eff8f7"></app-wave-divider>
       <section id="team" class="bg-accent">
         <app-title title="team.title" icon="spa"></app-title>
         <app-team></app-team>
-      </section>
       <app-wave-divider color="#eff8f7" bgColor="#31a4a7"></app-wave-divider>
+      </section>
       <!-- about -->
       <section id="about" class="bg-primary">
         <app-title
@@ -37,8 +37,8 @@
           iconColor="warn"
         ></app-title>
         <app-about></app-about>
-      </section>
       <app-wave-divider color="#31a4a7" bgColor="#eff8f7"></app-wave-divider>
+      </section>
       <!-- contact -->
       <section id="contact" class="bg-accent">
         <app-title title="contact.title" icon="spa"></app-title>
