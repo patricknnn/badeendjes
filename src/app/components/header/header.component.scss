@@ -6,7 +6,6 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   position: relative;
   margin: 0 -2rem;
   padding-bottom: 1rem;
@@ -17,7 +16,7 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    gap: 5rem;
+    gap: 3rem;
     z-index: 2;
 
     & .logo {
@@ -33,6 +32,7 @@
       & img {
         width: 100%;
         height: auto;
+        max-height: 50vh;
       }
     }
   }
