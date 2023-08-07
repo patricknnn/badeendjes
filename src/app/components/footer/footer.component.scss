@@ -3,4 +3,9 @@
   align-items: center;
   justify-content: center;
   height: 72px;
+
+  & p {
+    text-align: center;
+    margin: 0;
+  }
 }
