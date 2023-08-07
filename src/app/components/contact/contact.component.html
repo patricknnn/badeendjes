@@ -8,10 +8,10 @@
           <mat-spinner></mat-spinner>
         </div>
         <iframe
-          *ngIf="address"
+          *ngIf="mapsUrl"
           style="height: 100%; width: 100%; border: 0"
           frameborder="0"
-          [src]="getEmbeddedMapsUrl(address)"
+          [src]="mapsUrl"
         ></iframe>
       </div>
     </div>

@@ -11,6 +11,7 @@ export class ContactComponent {
   public phoneNumber?: string;
   public email?: string;
   public address?: string;
+  public mapsUrl?: SafeUrl;
 
   public constructor(
     private readonly _translateService: TranslateService,
@@ -27,6 +28,7 @@ export class ContactComponent {
     this.address = await this._translateService.getTranslation(
       'contact.location.address'
     );
+    this.mapsUrl = this.getEmbeddedMapsUrl(this.address);
   }
 
   public getLocationHref(): SafeUrl {
@@ -37,7 +39,7 @@ export class ContactComponent {
     );
   }
 
-  public getEmbeddedMapsUrl(address: string): SafeUrl {
+  private getEmbeddedMapsUrl(address: string): SafeUrl {
     const apiKey: string = '&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8';
     const baseUrl: string = 'https://www.google.com/maps/embed/v1/place?q=';
     const addressURL = address.replace(' ', '+');

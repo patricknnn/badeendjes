@@ -17,6 +17,7 @@
     & .welcome-message {
       display: flex;
       flex-direction: column;
+      align-items: center;
       flex-grow: 3;
       gap: 2rem;
 
@@ -24,6 +25,10 @@
         font-family: "Amatic SC", cursive;
         font-size: 48px;
         font-weight: 700;
+      }
+
+      & p {
+        text-align: center;
       }
 
       & button {
