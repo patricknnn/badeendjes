@@ -23,6 +23,20 @@
         [multiple]="false"
         [hideSingleSelectionIndicator]="true"
       >
+        <a
+          mat-list-item
+          *ngIf="address"
+          [href]="getLocationHref()"
+          target="_blank"
+        >
+          <mat-icon matListItemIcon class="txt-warn">location_on</mat-icon>
+          <div matListItemTitle class="txt-primary">
+            {{ "contact.location.address" | translateText | async }}
+          </div>
+          <div matListItemLine>
+            {{ "contact.location.description" | translateText | async }}
+          </div>
+        </a>
         <a mat-list-item *ngIf="phoneNumber" [href]="'tel:' + phoneNumber">
           <mat-icon matListItemIcon class="txt-warn">call</mat-icon>
           <div matListItemTitle class="txt-primary">
@@ -41,18 +55,22 @@
             {{ "contact.email.description" | translateText | async }}
           </div>
         </a>
-        <a
-          mat-list-item
-          *ngIf="address"
-          [href]="getLocationHref()"
-          target="_blank"
-        >
-          <mat-icon matListItemIcon class="txt-warn">location_on</mat-icon>
+        <a mat-list-item *ngIf="facebookUrl" [href]="facebookUrl">
+          <mat-icon matListItemIcon class="txt-warn">facebook</mat-icon>
           <div matListItemTitle class="txt-primary">
-            {{ "contact.location.address" | translateText | async }}
+            {{ "contact.facebook.title" | translateText | async }}
           </div>
           <div matListItemLine>
-            {{ "contact.location.description" | translateText | async }}
+            {{ "contact.facebook.description" | translateText | async }}
+          </div>
+        </a>
+        <a mat-list-item *ngIf="instagramUrl" [href]="instagramUrl">
+          <mat-icon matListItemIcon class="txt-warn">photo_camera</mat-icon>
+          <div matListItemTitle class="txt-primary">
+            {{ "contact.instagram.title" | translateText | async }}
+          </div>
+          <div matListItemLine>
+            {{ "contact.instagram.description" | translateText | async }}
           </div>
         </a>
       </mat-selection-list>

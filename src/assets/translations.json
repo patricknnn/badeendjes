@@ -30,7 +30,7 @@
   "contact": {
     "title": "Neem contact met ons op",
     "phone": {
-      "number": "06 12345678",
+      "number": "06 31757933",
       "description": "Tijdens kantooruren"
     },
     "email": {
@@ -38,8 +38,18 @@
       "description": "Zsm antwoord op u vragen"
     },
     "location": {
-      "address": "Het voorste streekje 9",
+      "address": "Het Voorste Streekje 9",
       "description": "Muntendam"
+    },
+    "facebook": {
+      "url": "https://www.facebook.com/profile.php?id=100092310014865",
+      "title": "Facebook",
+      "description": "Volg ons op Facebook"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/kinderopvangdebadeendjes/",
+      "title": "Instagram",
+      "description": "Volg ons op Instagram"
     }
   },
   "footer": {

@@ -27,6 +27,12 @@ body {
   justify-content: center;
 }
 
+.round-button {
+  padding: 24px !important;
+  height: 48px !important;
+  border-radius: 48px !important;
+}
+
 // helpers
 .bg-primary {
   background-color: $color-primary !important;

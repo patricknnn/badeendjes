@@ -11,6 +11,8 @@ export class ContactComponent {
   public phoneNumber?: string;
   public email?: string;
   public address?: string;
+  public facebookUrl?: SafeUrl;
+  public instagramUrl?: SafeUrl;
   public mapsUrl?: SafeUrl;
 
   public constructor(
@@ -28,6 +30,13 @@ export class ContactComponent {
     this.address = await this._translateService.getTranslation(
       'contact.location.address'
     );
+    this.facebookUrl = this._sinatizer.bypassSecurityTrustUrl(
+      await this._translateService.getTranslation('contact.facebook.url')
+    );
+    this.instagramUrl = this._sinatizer.bypassSecurityTrustUrl(
+      await this._translateService.getTranslation('contact.instagram.url')
+    );
+
     this.mapsUrl = this.getEmbeddedMapsUrl(this.address);
   }
 
