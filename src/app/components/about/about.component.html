@@ -39,4 +39,17 @@
       </p>
     </div>
   </div>
+  <div class="costs-wrapper">
+    <app-title
+      title="costs.title"
+      icon="spa"
+      titleColor="accent"
+      iconColor="warn"
+    ></app-title>
+    <div class="max-width txt-accent animate__animated animate__fadeInUp animate__delay-30ms">
+      <p>{{ "costs.cost" | translateText | async }}</p>
+      <p>{{ "costs.costDescription" | translateText | async }}</p>
+      <p>{{ "costs.costYear" | translateText | async }}</p>
+    </div>
+  </div>
 </div>

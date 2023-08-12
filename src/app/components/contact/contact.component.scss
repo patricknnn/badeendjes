@@ -1,7 +1,7 @@
 .contact-wrapper {
   display: flex;
   flex-direction: row;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 
   & .max-width {
     width: 100%;
@@ -49,5 +49,17 @@
         max-width: calc(100vw - 4rem);
       }
     }
+  }
+}
+
+.opening-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8rem;
+
+  & .opening-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

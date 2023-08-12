@@ -77,3 +77,53 @@
     </div>
   </div>
 </div>
+
+<div *appInView class="container opening-wrapper">
+  <div class="max-width">
+    <app-title title="opening.title" icon="spa"></app-title>
+    <div
+      class="opening-list-wrapper animate__animated animate__fadeInUp animate__delay-30ms"
+    >
+      <mat-list>
+        <mat-list-item>
+          <mat-icon matListItemIcon class="txt-warn">meeting_room</mat-icon>
+          <div matListItemTitle class="txt-primary">
+            {{ "opening.openDescription" | translateText | async }}
+          </div>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon matListItemIcon class="txt-warn">date_range</mat-icon>
+          <div matListItemTitle class="txt-primary">
+            {{ "opening.openDays" | translateText | async }}
+          </div>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon matListItemIcon class="txt-warn">schedule</mat-icon>
+          <div matListItemTitle class="txt-primary">
+            {{ "opening.openTime" | translateText | async }}
+          </div>
+        </mat-list-item>
+      </mat-list>
+      <mat-list>
+        <mat-list-item>
+          <mat-icon matListItemIcon class="txt-warn">no_meeting_room</mat-icon>
+          <div matListItemTitle class="txt-primary">
+            {{ "opening.closedDescription" | translateText | async }}
+          </div>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon matListItemIcon class="txt-warn">date_range</mat-icon>
+          <div matListItemTitle class="txt-primary">
+            {{ "opening.closedDays" | translateText | async }}
+          </div>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon matListItemIcon class="txt-warn">info</mat-icon>
+          <div matListItemTitle class="txt-primary">
+            {{ "opening.remark" | translateText | async }}
+          </div>
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </div>
+</div>

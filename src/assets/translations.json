@@ -1,7 +1,7 @@
 {
   "about": {
     "title": "Over onze opvang",
-    "message": "Kleinschalige en flexibele kinderopvang op maat. Onze opvang voor kinderen (0 - 12 jaar) vindt plaats in een huiselijke sfeer. Zo ziet je kind altijd hetzelfde vertrouwde gezicht!",
+    "message": "Kleinschalige en flexibele kinderopvang op maat. Onze opvang voor kinderen (0 - 4 jaar) vindt plaats in een huiselijke sfeer. Zo ziet uw kind altijd hetzelfde vertrouwde gezicht!",
     "cardOne": {
       "title": "Huiselijk",
       "description": "Opvang vindt plaats in een huiselijke sfeer"
@@ -18,20 +18,22 @@
   "welcome": {
     "title": "Welkom",
     "subTitle": "De Badeendjes",
-    "description": "Kinderopvang De Badeendjes staat voor kwaliteit. Professioneel, gestructureerd, schoon en veilig. Wij bieden uw kind een vertrouwde en beschermde omgeving aan.",
+    "p1": "Kinderopvang De Badeendjes staat voor kwaliteit. Professioneel, gestructureerd, schoon en veilig. Wij bieden uw kind een vertrouwde en beschermde omgeving aan nabij het centrum van Muntendam.",
+    "p2": "Uw kind wordt opgevangen in huiselijke sfeer. Dit vindt plaats in een vertrouwde, schone en nette omgeving waar kinderen genoeg ruimte hebben om te spelen. Naast de huiselijke omgeving zijn er ook twee nabijgelegen speeltuinen op loopafstand waarvan één via onze achtertuin bereikbaar.",
     "button": "Plan een bezichtiging"
   },
   "team": {
-    "title": "Ons team",
-    "subTitle": "Wie zijn wij",
-    "description": "Kinderopvang De Badeendjes staat voor kwaliteit. Professioneel, gestructureerd, schoon en veilig. Wij bieden uw kind een vertrouwde en beschermde omgeving aan.",
+    "title": "Even voorstellen",
+    "subTitle": "Even voorstellen",
+    "p1": "Mijn naam is Iris Imminga en ik ben de trotse eigenaar van kinderopvang De Badeendjes. Samen met mijn partner Martin en onze zoon Viktor (geboren in december 2022) wonen wij nabij het centrum van Muntendam.",
+    "p2": "Ik heb altijd al een passie gehad voor het werken met kinderen, maar om mijn horizon te verbreden ben ik in 2020 afgestudeerd als persoonlijk begeleider gehandicaptenzorg en persoonlijk begeleider specifieke doelgroepen. Na mijn stage ben ik een aantal jaar werkzaam geweest in de gehandicaptenzorg. In 2023 ben ik gestart als gastouder.",
     "button": "Kom kennis maken"
   },
   "contact": {
     "title": "Neem contact met ons op",
     "phone": {
       "number": "06 31757933",
-      "description": "Tijdens kantooruren"
+      "description": "WhatsApp of bel"
     },
     "email": {
       "address": "info@kinderopvangdebadeendjes.nl",
@@ -57,5 +59,20 @@
   },
   "home": {
     "title": "Home"
+  },
+  "opening": {
+    "title": "Openingstijden",
+    "openDays": "Maandag t/m Donderdag",
+    "openTime": "7:00 - 18:00",
+    "openDescription": "Geopend van:",
+    "closedDays": "Vrijdag t/m Zondag",
+    "closedDescription": "Gesloten van:",
+    "remark": "Afwijkende tijden zijn in overleg"
+  },
+  "costs": {
+    "title": "Tarieven",
+    "cost": "Het uurtarief voor 2023 is €6.15 per kind",
+    "costDescription": "Dit is inclusief verschillende tussendoortjes en één maaltijd (lunch) per dag. Exclusief luiers, billendoekjes, potjes, flesvoeding en speciale voeding, deze dient zelf meegenomen te worden. Dit bedrag is exclusief bureaukosten aan het gastouder bureau.",
+    "costYear": "Elk nieuw kalenderjaar zal er bekenen worden of de uurprijs moet worden aangepast, hierover wordt u op de hoogte gebracht. "
   }
 }
