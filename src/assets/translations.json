@@ -24,13 +24,13 @@
   },
   "team": {
     "title": "Even voorstellen",
-    "subTitle": "Even voorstellen",
+    "subTitle": "Iris Imminga",
     "p1": "Mijn naam is Iris Imminga en ik ben de trotse eigenaar van kinderopvang De Badeendjes. Samen met mijn partner Martin en onze zoon Viktor (geboren in december 2022) wonen wij nabij het centrum van Muntendam.",
     "p2": "Ik heb altijd al een passie gehad voor het werken met kinderen, maar om mijn horizon te verbreden ben ik in 2020 afgestudeerd als persoonlijk begeleider gehandicaptenzorg en persoonlijk begeleider specifieke doelgroepen. Na mijn stage ben ik een aantal jaar werkzaam geweest in de gehandicaptenzorg. In 2023 ben ik gestart als gastouder.",
     "button": "Kom kennis maken"
   },
   "contact": {
-    "title": "Neem contact met ons op",
+    "title": "Contact",
     "phone": {
       "number": "06 31757933",
       "description": "WhatsApp of bel"
@@ -64,10 +64,9 @@
     "title": "Openingstijden",
     "openDays": "Maandag t/m Donderdag",
     "openTime": "7:00 - 18:00",
-    "openDescription": "Geopend van:",
     "closedDays": "Vrijdag t/m Zondag",
-    "closedDescription": "Gesloten van:",
-    "remark": "Afwijkende tijden zijn in overleg"
+    "closedTime": "Gesloten",
+    "remark": "Afwijkende tijden zijn in overleg mogelijk"
   },
   "costs": {
     "title": "Tarieven",

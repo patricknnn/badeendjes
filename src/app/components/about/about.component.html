@@ -4,7 +4,7 @@
   >
     {{ "about.message" | translateText | async }}
   </span>
-  <div class="cards-wrapper">
+  <div class="cards-wrapper max-width">
     <div
       class="card-content mat-elevation-z8 bg-accent animate__animated animate__zoomIn animate__delay-30ms"
     >
@@ -46,7 +46,7 @@
       titleColor="accent"
       iconColor="warn"
     ></app-title>
-    <div class="max-width txt-accent animate__animated animate__fadeInUp animate__delay-30ms">
+    <div class="max-width txt-accent animate__animated animate__fadeInUp animate__delay-60ms">
       <p>{{ "costs.cost" | translateText | async }}</p>
       <p>{{ "costs.costDescription" | translateText | async }}</p>
       <p>{{ "costs.costYear" | translateText | async }}</p>
