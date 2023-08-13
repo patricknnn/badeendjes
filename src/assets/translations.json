@@ -41,7 +41,7 @@
     },
     "location": {
       "address": "Het Voorste Streekje 9",
-      "description": "Muntendam"
+      "description": "9649 GV Muntendam"
     },
     "facebook": {
       "url": "https://www.facebook.com/profile.php?id=100092310014865",
@@ -71,7 +71,7 @@
   },
   "costs": {
     "title": "Tarieven",
-    "cost": "Het uurtarief voor 2023 is €6.15 per kind",
+    "cost": "Het uurtarief voor 2023 is €6.15 per kind.",
     "costDescription": "Dit is inclusief verschillende tussendoortjes en één maaltijd (lunch) per dag. Exclusief luiers, billendoekjes, potjes, flesvoeding en speciale voeding, deze dient zelf meegenomen te worden. Dit bedrag is exclusief bureaukosten aan het gastouder bureau.",
     "costYear": "Elk nieuw kalenderjaar zal er bekenen worden of de uurprijs moet worden aangepast, hierover wordt u op de hoogte gebracht. "
   }

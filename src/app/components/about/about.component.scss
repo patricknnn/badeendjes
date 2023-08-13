@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  margin-bottom: 4rem;
 
   & .message {
     max-width: 750px;
@@ -19,7 +20,6 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin-bottom: 1.5rem;
 
     & .card-content {
       padding: 1rem;
