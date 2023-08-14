@@ -49,18 +49,20 @@
       }
     }
   }
+}
 
-  & .costs-wrapper {
-    & .max-width {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      gap: 2rem;
+.costs-wrapper {
+  margin-bottom: 4rem;
+  
+  & .max-width {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
 
-      & p {
-        margin: 0;
-        text-align: center;
-      }
+    & p {
+      margin: 0;
+      text-align: center;
     }
   }
 }
