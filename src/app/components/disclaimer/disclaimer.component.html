@@ -1,0 +1,8 @@
+<button
+  mat-raised-button
+  [color]="color"
+  class="txt-accent round-button"
+  (click)="openDialog()"
+>
+  {{ "disclaimer.title" | translateText | async }}
+</button>

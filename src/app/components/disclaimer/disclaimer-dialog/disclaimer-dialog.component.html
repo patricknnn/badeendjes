@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>{{ "disclaimer.title" | translateText | async }}</h2>
+<mat-dialog-content>
+  <p>{{ "disclaimer.intro" | translateText | async }}</p>
+  <p>{{ "disclaimer.pricing" | translateText | async }}</p>
+  <p>{{ "disclaimer.actuality" | translateText | async }}</p>
+  <p>{{ "disclaimer.changes" | translateText | async }}</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close cdkFocusInitial>
+    {{ "disclaimer.close" | translateText | async }}
+  </button>
+</mat-dialog-actions>

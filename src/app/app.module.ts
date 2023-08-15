@@ -24,6 +24,9 @@ import { TranslateTextPipe } from './pipes/translate-text.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { InViewDirective } from './directives/in-view.directive';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DisclaimerDialogComponent } from './components/disclaimer/disclaimer-dialog/disclaimer-dialog.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     SidenavComponent,
     TranslateTextPipe,
     InViewDirective,
+    DisclaimerComponent,
+    DisclaimerDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,6 +59,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatButtonModule,
     HttpClientModule,
     MatProgressSpinnerModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
