@@ -41,18 +41,48 @@
   </div>
 </div>
 
-<div *appInView class="costs-wrapper">
+<div *appInView class="container opening-wrapper">
   <app-title
-    title="costs.title"
+    title="opening.title"
     icon="spa"
     titleColor="accent"
     iconColor="warn"
   ></app-title>
-  <div
-    class="max-width txt-accent animate__animated animate__fadeInUp animate__delay-30ms"
+  <span
+    class="remark max-width txt-accent animate__animated animate__fadeIn animate__delay-30ms"
   >
-    <p>{{ "costs.cost" | translateText | async }}</p>
-    <p>{{ "costs.costDescription" | translateText | async }}</p>
-    <p>{{ "costs.costYear" | translateText | async }}</p>
+    {{ "opening.remark" | translateText | async }}
+  </span>
+  <div
+    class="opening-list-wrapper max-width animate__animated animate__fadeInUp animate__delay-30ms"
+  >
+    <mat-list>
+      <mat-list-item>
+        <mat-icon matListItemIcon class="txt-warn">date_range</mat-icon>
+        <div matListItemTitle class="txt-accent">
+          {{ "opening.openDays" | translateText | async }}
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListItemIcon class="txt-warn">schedule</mat-icon>
+        <div matListItemTitle class="txt-accent">
+          {{ "opening.openTime" | translateText | async }}
+        </div>
+      </mat-list-item>
+    </mat-list>
+    <mat-list>
+      <mat-list-item>
+        <mat-icon matListItemIcon class="txt-warn">date_range</mat-icon>
+        <div matListItemTitle class="txt-accent">
+          {{ "opening.closedDays" | translateText | async }}
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListItemIcon class="txt-warn">schedule</mat-icon>
+        <div matListItemTitle class="txt-accent">
+          {{ "opening.closedTime" | translateText | async }}
+        </div>
+      </mat-list-item>
+    </mat-list>
   </div>
 </div>

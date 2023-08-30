@@ -33,7 +33,7 @@
           <div matListItemTitle class="txt-primary">
             {{ "contact.location.address" | translateText | async }}
           </div>
-          <div matListItemLine>
+          <div matListItemLine class="txt-primary">
             {{ "contact.location.description" | translateText | async }}
           </div>
         </a>
@@ -42,77 +42,38 @@
           <div matListItemTitle class="txt-primary">
             {{ "contact.phone.number" | translateText | async }}
           </div>
-          <div matListItemLine>
+          <!-- <div matListItemLine>
             {{ "contact.phone.description" | translateText | async }}
-          </div>
+          </div> -->
         </a>
         <a mat-list-item *ngIf="email" [href]="'mailto:' + email">
           <mat-icon matListItemIcon class="txt-warn">mail</mat-icon>
           <div matListItemTitle class="txt-primary">
             {{ "contact.email.address" | translateText | async }}
           </div>
-          <div matListItemLine>
+          <!-- <div matListItemLine>
             {{ "contact.email.description" | translateText | async }}
-          </div>
+          </div> -->
         </a>
         <a mat-list-item *ngIf="facebookUrl" [href]="facebookUrl">
           <mat-icon matListItemIcon class="txt-warn">facebook</mat-icon>
           <div matListItemTitle class="txt-primary">
             {{ "contact.facebook.title" | translateText | async }}
           </div>
-          <div matListItemLine>
+          <!-- <div matListItemLine>
             {{ "contact.facebook.description" | translateText | async }}
-          </div>
+          </div> -->
         </a>
         <a mat-list-item *ngIf="instagramUrl" [href]="instagramUrl">
           <mat-icon matListItemIcon class="txt-warn">photo_camera</mat-icon>
           <div matListItemTitle class="txt-primary">
             {{ "contact.instagram.title" | translateText | async }}
           </div>
-          <div matListItemLine>
+          <!-- <div matListItemLine>
             {{ "contact.instagram.description" | translateText | async }}
-          </div>
+          </div> -->
         </a>
       </mat-selection-list>
     </div>
-  </div>
-</div>
-
-<div *appInView class="container opening-wrapper">
-  <app-title title="opening.title" icon="spa"></app-title>
-  <span class="remark max-width txt-primary animate__animated animate__fadeIn animate__delay-30ms">
-    {{ "opening.remark" | translateText | async }}
-  </span>
-  <div
-    class="opening-list-wrapper max-width animate__animated animate__fadeInUp animate__delay-30ms"
-  >
-    <mat-list>
-      <mat-list-item>
-        <mat-icon matListItemIcon class="txt-warn">date_range</mat-icon>
-        <div matListItemTitle class="txt-primary">
-          {{ "opening.openDays" | translateText | async }}
-        </div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon matListItemIcon class="txt-warn">schedule</mat-icon>
-        <div matListItemTitle class="txt-primary">
-          {{ "opening.openTime" | translateText | async }}
-        </div>
-      </mat-list-item>
-    </mat-list>
-    <mat-list>
-      <mat-list-item>
-        <mat-icon matListItemIcon class="txt-warn">date_range</mat-icon>
-        <div matListItemTitle class="txt-primary">
-          {{ "opening.closedDays" | translateText | async }}
-        </div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon matListItemIcon class="txt-warn">schedule</mat-icon>
-        <div matListItemTitle class="txt-primary">
-          {{ "opening.closedTime" | translateText | async }}
-        </div>
-      </mat-list-item>
-    </mat-list>
   </div>
 </div>

@@ -1,6 +1,6 @@
 {
   "about": {
-    "title": "Over onze opvang",
+    "title": "Over de opvang",
     "message": "Kleinschalige en flexibele kinderopvang op maat. Onze opvang voor kinderen (0 - 4 jaar) vindt plaats in een huiselijke sfeer. Zo ziet uw kind altijd hetzelfde vertrouwde gezicht!",
     "cardOne": {
       "title": "Huiselijk",
@@ -8,7 +8,7 @@
     },
     "cardTwo": {
       "title": "Vertrouwd",
-      "description": "Het vertouwde gezicht van de gastouder"
+      "description": "Het vertrouwde gezicht van de gastouder"
     },
     "cardThree": {
       "title": "Flexibel",
@@ -18,16 +18,16 @@
   "welcome": {
     "title": "Welkom",
     "subTitle": "De Badeendjes",
-    "p1": "Kinderopvang De Badeendjes staat voor kwaliteit. Professioneel, gestructureerd, schoon en veilig. Wij bieden uw kind een vertrouwde en beschermde omgeving aan nabij het centrum van Muntendam.",
+    "p1": "Kinderopvang De Badeendjes staat voor kwaliteit. Professioneel, gestructureerd, schoon en veilig. Ik bied uw kind een vertrouwde en beschermde omgeving aan in een kindvriendelijke wijk nabij het centrum van Muntendam.",
     "p2": "Uw kind wordt opgevangen in huiselijke sfeer. Dit vindt plaats in een vertrouwde, schone en nette omgeving waar kinderen genoeg ruimte hebben om te spelen. Naast de huiselijke omgeving zijn er ook twee nabijgelegen speeltuinen op loopafstand waarvan één via onze achtertuin bereikbaar.",
-    "button": "Plan een bezichtiging"
+    "button": "Huisregels"
   },
   "team": {
     "title": "Even voorstellen",
     "subTitle": "Iris Imminga",
-    "p1": "Mijn naam is Iris Imminga en ik ben de trotse eigenaar van kinderopvang De Badeendjes. Samen met mijn partner Martin en onze zoon Viktor (geboren in december 2022) wonen wij nabij het centrum van Muntendam.",
+    "p1": "Mijn naam is Iris Imminga en ik ben de trotse eigenaresse van kinderopvang De Badeendjes. Samen met mijn partner Martin en onze zoon Viktor (geboren in december 2022) wonen wij nabij het centrum van Muntendam.",
     "p2": "Ik heb altijd al een passie gehad voor het werken met kinderen, maar om mijn horizon te verbreden ben ik in 2020 afgestudeerd als persoonlijk begeleider gehandicaptenzorg en persoonlijk begeleider specifieke doelgroepen. Na mijn stage ben ik een aantal jaar werkzaam geweest in de gehandicaptenzorg. In 2023 ben ik gestart als gastouder.",
-    "button": "Kom kennis maken"
+    "button": "Kennis maken"
   },
   "contact": {
     "title": "Contact",
@@ -55,7 +55,9 @@
     }
   },
   "footer": {
-    "text": "Kinderopvang De Badeendjes"
+    "text": "Kinderopvang De Badeendjes",
+    "kvk": "KVK nummer: 91115175",
+    "lrkp": "LRKP nummer: xxx"
   },
   "home": {
     "title": "Home"
@@ -80,6 +82,7 @@
     "pricing": "Voor de prijzen die op onze website staan, geldt dat wij streven naar een zo zorgvuldig mogelijke weergave van de realiteit en de bedoelde prijzen. Fouten die daarbij ontstaan en herkenbaar zijn als programmeer dan wel typefouten, vormen nooit een aanleiding om een contract dan wel overeenkomst met Kinderopvang De Badeendjes te mogen claimen of te veronderstellen.",
     "actuality": "Kinderopvang De Badeendjes streeft naar een zo actueel mogelijke website. Mocht ondanks deze inspanningen de informatie van of de inhoud op deze website onvolledig en of onjuist zijn, dan kunnen wij daarvoor geen aansprakelijkheid aanvaarden.",
     "changes": "De informatie en/of producten op deze website worden aangeboden zonder enige vorm van garantie en of aanspraak op juistheid. Wij behouden ons het recht voor om deze materialen te wijzigen, te verwijderen of opnieuw te plaatsen zonder enige voorafgaande medeling. Kinderopvang De Badeendjes aanvaardt geen aansprakelijkheid voor enige informatie staat waarnaar wij via hyperlinks verwijzen.",
-    "close": "Sluiten"
+    "close": "Sluiten",
+    "download": "Downloaden"
   }
 }

@@ -4,7 +4,7 @@
       class="visit-card animate__animated animate__fadeInLeft animate__delay-30ms"
     >
       <div class="image-wrapper">
-        <img src="assets/img/huis.jpeg" alt="bezoek" class="mat-elevation-z8" />
+        <img src="assets/img/huis.jpg" alt="bezoek" class="mat-elevation-z8" />
       </div>
     </div>
     <div
@@ -19,7 +19,13 @@
       <p class="txt-primary">
         {{ "welcome.p2" | translateText | async }}
       </p>
-      <a mat-raised-button color="warn" class="txt-accent round-button" href="#contact">
+      <a
+        mat-raised-button
+        color="warn"
+        class="txt-accent round-button"
+        [href]="houseRules"
+        target="_blank"
+      >
         {{ "welcome.button" | translateText | async }}
       </a>
     </div>
