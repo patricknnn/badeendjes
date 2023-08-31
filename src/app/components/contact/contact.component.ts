@@ -21,9 +21,10 @@ export class ContactComponent {
   ) {}
 
   public async ngOnInit(): Promise<void> {
-    this.phoneNumber = await this._translateService.getTranslation(
+    const number: string = await this._translateService.getTranslation(
       'contact.phone.number'
     );
+    this.phoneNumber = `31${number.replaceAll(' ', '')}`;
     this.email = await this._translateService.getTranslation(
       'contact.email.address'
     );

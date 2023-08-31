@@ -12,8 +12,10 @@ export class CallComponent implements OnInit {
   public constructor(private readonly _translateService: TranslateService) {}
 
   public async ngOnInit(): Promise<void> {
-    this.phoneNumber = await this._translateService.getTranslation(
+    const number: string = await this._translateService.getTranslation(
       'contact.phone.number'
     );
+
+    this.phoneNumber = `31${number.replaceAll(' ', '')}`;
   }
 }

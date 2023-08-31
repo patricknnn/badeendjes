@@ -37,7 +37,7 @@
             {{ "contact.location.description" | translateText | async }}
           </div>
         </a>
-        <a mat-list-item *ngIf="phoneNumber" [href]="'tel:' + phoneNumber">
+        <a mat-list-item *ngIf="phoneNumber" [href]="'https://wa.me/' + phoneNumber">
           <mat-icon matListItemIcon class="txt-warn">call</mat-icon>
           <div matListItemTitle class="txt-primary">
             {{ "contact.phone.number" | translateText | async }}

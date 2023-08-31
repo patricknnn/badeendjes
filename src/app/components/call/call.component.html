@@ -1,7 +1,7 @@
 <div
   class="call-btn-wrapper bg-primary mat-elevation-z8 animate__animated animate__fadeInDown"
 >
-  <a mat-icon-button *ngIf="phoneNumber" [href]="'tel:' + phoneNumber">
-    <mat-icon class="txt-accent">call</mat-icon>
+  <a *ngIf="phoneNumber" [href]="'https://wa.me/' + phoneNumber">
+    <img src="./assets//img/whatsapp.png">
   </a>
 </div>
