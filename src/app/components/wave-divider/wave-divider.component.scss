@@ -1,4 +1,27 @@
 .wave-divider {
+  position: relative;
   display: flex;
   margin: 0 -2rem;
+
+  & svg {
+    z-index: 1;
+  }
+
+  & .top-line {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    z-index: 2;
+  }
+
+  & .bottom-line {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    z-index: 2;
+  }
 }
