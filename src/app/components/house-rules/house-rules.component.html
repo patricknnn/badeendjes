@@ -1,0 +1,8 @@
+<button
+  mat-raised-button
+  [color]="color"
+  class="txt-accent round-button"
+  (click)="openDialog()"
+>
+  {{ "house-rules.title" | translateText | async }}
+</button>

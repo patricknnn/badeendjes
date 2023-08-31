@@ -1,0 +1,32 @@
+<!-- <h2 mat-dialog-title>{{ "house-rules.title" | translateText | async }}</h2> -->
+<mat-dialog-content class="dialog-content">
+  <div class="spinner">
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+  </div>
+  <div class="pdf">
+    <pdf-viewer
+      [src]="houseRules"
+      [rotation]="0"
+      [original-size]="false"
+      [show-all]="true"
+      [fit-to-page]="false"
+      [zoom]="1"
+      [zoom-scale]="'page-width'"
+      [stick-to-page]="false"
+      [render-text]="true"
+      [external-link-target]="'blank'"
+      [autoresize]="true"
+      [show-borders]="false"
+      (after-load-complete)="isLoading = false"
+      style="width: 100%; min-height: 600px"
+    ></pdf-viewer>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <a mat-button [href]="houseRules" target="_blank">
+    {{ "house-rules.open-pdf" | translateText | async }}
+  </a>
+  <button mat-button mat-dialog-close cdkFocusInitial>
+    {{ "house-rules.close" | translateText | async }}
+  </button>
+</mat-dialog-actions>

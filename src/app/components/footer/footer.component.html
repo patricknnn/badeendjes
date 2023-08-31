@@ -1,8 +1,13 @@
 <div class="footer-wrapper">
   <div class="content bg-warn txt-accent">
     <p>© {{ currentYear }} {{ "footer.text" | translateText | async }}</p>
-    <p>{{ "footer.kvk" | translateText | async }}</p>
-    <p>{{ "footer.lrkp" | translateText | async }}</p>
-    <app-disclaimer color="primary"></app-disclaimer>
+    <div class="horizontal">
+      <span>{{ "footer.kvk" | translateText | async }}</span>
+      <span>{{ "footer.lrkp" | translateText | async }}</span>
+    </div>
+    <div class="horizontal">
+      <app-house-rules color="primary"></app-house-rules>
+      <app-disclaimer color="primary"></app-disclaimer>
+    </div>
   </div>
 </div>

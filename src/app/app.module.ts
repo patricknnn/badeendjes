@@ -27,6 +27,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DisclaimerDialogComponent } from './components/disclaimer/disclaimer-dialog/disclaimer-dialog.component';
+import { HouseRulesComponent } from './components/house-rules/house-rules.component';
+import { HouseRulesDialogComponent } from './components/house-rules/house-rules-dialog/house-rules-dialog.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -46,6 +49,8 @@ import { DisclaimerDialogComponent } from './components/disclaimer/disclaimer-di
     InViewDirective,
     DisclaimerComponent,
     DisclaimerDialogComponent,
+    HouseRulesComponent,
+    HouseRulesDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +65,7 @@ import { DisclaimerDialogComponent } from './components/disclaimer/disclaimer-di
     HttpClientModule,
     MatProgressSpinnerModule,
     MatDialogModule,
+    PdfViewerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

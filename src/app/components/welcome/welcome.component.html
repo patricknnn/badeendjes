@@ -19,15 +19,7 @@
       <p class="txt-primary">
         {{ "welcome.p2" | translateText | async }}
       </p>
-      <a
-        mat-raised-button
-        color="warn"
-        class="txt-accent round-button"
-        [href]="houseRules"
-        target="_blank"
-      >
-        {{ "welcome.button" | translateText | async }}
-      </a>
+      <app-house-rules color="warn"></app-house-rules>
     </div>
   </div>
 </div>
